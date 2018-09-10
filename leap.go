@@ -2,8 +2,8 @@ package leap
 
 import "fmt"
 
-// IsLeapYear returns true if the input year is a leap year
-func leapYear(year int) string {
+// IsLeapYear returns the provided year and 1 if the year is a leap year; otherwise 0
+func IsLeapYear(year int) string {
 	isLeap := 0
 	if year%400 == 0 {
 		isLeap = 1
