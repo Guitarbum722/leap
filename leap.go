@@ -13,5 +13,5 @@ func IsLeapYear(year int) string {
 		isLeap = 1
 	}
 
-	return fmt.Sprintf("%v - %v", year, isLeap)
+	return fmt.Sprintf("%d - %d", year, isLeap)
 }
