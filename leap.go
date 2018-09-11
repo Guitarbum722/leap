@@ -1,7 +1,5 @@
 package leap
 
-import "fmt"
-
 // IsLeapYear returns the provided year and 1 if the year is a leap year; otherwise 0
 func IsLeapYear(year int) string {
 	isLeap := 0
@@ -13,5 +11,5 @@ func IsLeapYear(year int) string {
 		isLeap = 1
 	}
 
-	return fmt.Sprintf("%d - %d", year, isLeap)
+	return string(year) + " - " + string(isLeap)
 }
